@@ -1,0 +1,42 @@
+.more
+	height: 40px
+	padding: 0 25px
+	border-radius: 40px
+	border: none
+	outline: none
+	cursor: pointer
+	display: flex
+	align-items: center
+	justify-content: center
+	color: #000
+	font-family: $r
+	font-size: 12px
+	font-weight: 900
+	background-color: $yellow
+
+	&:hover
+		color: #fff
+		background-color: #000
+
+	&__icon
+		width: 17px
+		height: 15px
+		margin-right: 10px
+	
+	&:hover &__icon
+		fill: #fff
+		transition-duration: 1s
+		transform: rotate(360deg)
+
+	&--disable
+		cursor: not-allowed
+		background-color:  #e4e4e4
+
+		&:hover
+			color: #000
+			background-color:  #e4e4e4
+
+	&--disable:hover &__icon
+		fill: #000
+		transition-duration: 0s
+		transform: rotate(0deg)

@@ -1,0 +1,18 @@
+mixin features()
+	.features&attributes(attributes)
+		._container
+			a._link(href="#")
+				svg._icon.features__check: use(xlink:href="assets/images/spriteSvg.svg#check")
+				._title не<br>кидаем
+			a._link(href="#")
+				svg._icon.features__shield: use(xlink:href="assets/images/spriteSvg.svg#shield")
+				._title система<br>защиты
+				hr._line
+			a._link(href="#")
+				svg._icon.features__like: use(xlink:href="assets/images/spriteSvg.svg#like")
+				._title наши<br>отзывы
+				hr._line
+			a._link(href="#")
+				svg._icon.features__info: use(xlink:href="assets/images/spriteSvg.svg#info")
+				._title почему<br>именно мы
+				hr._line

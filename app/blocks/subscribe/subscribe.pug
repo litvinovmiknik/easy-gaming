@@ -1,0 +1,7 @@
+mixin subscribe()
+	.subscribe&attributes(attributes)
+		._title Подпишись и получи скидку
+		form._form(action="#" method="post")
+			input._input(type="email" name="email" placeholder="Email")
+			button._button
+				svg._icon: use(xlink:href="assets/images/spriteSvg.svg#paper-plane")

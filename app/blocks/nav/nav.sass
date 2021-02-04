@@ -1,0 +1,40 @@
+.nav
+	display: flex
+	@media (max-width: 992px)
+		display: none
+
+	&__link
+		color: #000
+		font-family: $r
+		font-size: 12px
+		font-weight: 900
+		text-transform: uppercase
+		text-decoration: none
+		margin: 0 10px
+
+		&:hover
+			color: $dark-yellow
+	
+.slicknav_menu
+	display: none
+	background-color: $yellow
+	@media (max-width: 992px)
+		display: block
+
+.slicknav_btn
+	background-color: #000
+
+.slicknav_nav a
+	border: none
+	border-radius: 0
+	color: #000
+	font-family: $r
+	font-size: 12px
+	font-weight: 900
+	text-decoration: none
+
+	&:hover
+		border: none
+		border-radius: 0
+		color: #fff
+		background-color: #000

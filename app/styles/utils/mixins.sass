@@ -1,0 +1,40 @@
+=bx-wrapper()
+    margin-bottom: 0
+    background: transparent
+    border: none
+    box-shadow: none
+    max-width: 100%!important
+
+=bx-controls-direction($top, $right)
+    width: 70px
+    height: 30px
+    position: absolute
+    top: $top
+    right: $right
+
+=bx-prev()
+    left: 0
+    width: 30px
+    height: 30px
+    border-radius: 30px
+    background-color: $light-gray
+    background-image: url(../images/spriteSvg.svg#arrow)!important
+    background-repeat: no-repeat!important
+    background-position: center!important
+    transform: scale(-1, 1)
+
+    &:hover, &:active, &:focus
+        background-color: $yellow
+
+=bx-next()
+    right: 0
+    width: 30px
+    height: 30px
+    border-radius: 30px
+    background-color: $light-gray
+    background-image: url(../images/spriteSvg.svg#arrow)!important
+    background-repeat: no-repeat!important
+    background-position: center!important
+
+    &:hover, &:active, &:focus
+        background-color: $yellow

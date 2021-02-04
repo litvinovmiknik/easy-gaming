@@ -1,0 +1,6 @@
+mixin logo($mod)
+	a.logo(href="index.html")&attributes(attributes)
+		if $mod == 'light'
+			img._img(src="assets/images/spriteSvg.svg#logo-light" alt="")
+		else
+			img._img(src="assets/images/spriteSvg.svg#logo" alt="")

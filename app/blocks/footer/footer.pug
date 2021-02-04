@@ -1,0 +1,25 @@
+mixin footer()
+	footer.footer&attributes(attributes)
+		._container
+			+logo('light')(class="footer__logo")
+			._row
+				._col
+					._title Компания
+					a._link(href="#") Гарантии
+					a._link(href="#") Каталог
+					a._link(href="#") Как работает
+					a._link(href="#") Отзывы
+					a._link(href="#") Стать продавцом
+				._col
+					._title О нас
+					a._link(href="#") Вопросы и ответы
+					a._link(href="#") Политика компании
+					a._link(href="#") Личный кабинет
+				._col
+					._title Контакты
+					+phone('+79108996815')(class="footer__phone")
+					+email('support@easygaming.ru')(class="footer__email")
+					+address('ул. Новокузнецкая 58, Москва')(class="footer__address")
+			+subscribe()(class="footer__subscribe")
+		+copyright()
+		

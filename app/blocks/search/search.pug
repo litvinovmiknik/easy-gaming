@@ -1,0 +1,7 @@
+mixin search()
+	.search&attributes(attributes)
+		form._form(action="#" method="get")
+			input._input(type="search" name="query" placeholder="Поиск по играм")
+			button._button
+				svg._icon: use(xlink:href="assets/images/spriteSvg.svg#search")
+				|Найти

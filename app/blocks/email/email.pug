@@ -1,0 +1,4 @@
+mixin email($text)
+	.email&attributes(attributes)
+		svg._icon: use(xlink:href="assets/images/spriteSvg.svg#email")
+		a._link(href="mailto:" + $text)= $text

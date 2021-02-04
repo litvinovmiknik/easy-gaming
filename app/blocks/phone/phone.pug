@@ -1,0 +1,4 @@
+mixin phone($text)
+	.phone&attributes(attributes)
+		svg._icon: use(xlink:href="assets/images/spriteSvg.svg#phone")
+		a._link(href="tel:" + $text)= $text
