@@ -1,0 +1,13 @@
+extends layouts/default
+block title
+    title Easy Gaming
+block link
+    link(rel="stylesheet" href="assets/styles/index.css")
+block body
+    +header()
+    main.main
+        +banner()
+        +catalog()
+    +footer()
+block script
+    script(src="assets/scripts/index.js")
