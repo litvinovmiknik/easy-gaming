@@ -1,0 +1,14 @@
+mixin sign-in()
+	.sign-in&attributes(attributes)
+		._container
+			+title('Войти в профиль')(class="sign-in__title")
+			form._form(action="#" method="post")
+				input._input(type="text" name="login" placeholder="Логин")
+				input._input(type="password" name="password" placeholder="Пароль")
+				._row
+					+checkbox('remember', 'remember', 'Запомнить меня')
+					a._link(href="forgot-password.html") Забыли пароль?
+				button._button Войти
+				._row
+					._text У Вас все еще нет профиля?
+					a._link.sign-in__sign-up-link(href="sign-up.html") Регистрация
